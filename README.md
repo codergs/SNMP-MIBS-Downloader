@@ -27,14 +27,14 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
 
 ##Important Information##:
 1. For many users the installed MIBs were under /usr/local/share/snmp/mibs
-2. I changed all the mibs under /usr/share/snmp/mibs to .txt extension (May not be needeed, but Ben Rockwood's                      **"The  Net-SNMP Programming Guide"** mentions to do the above. 
+2. I changed all the mibs under /usr/share/snmp/mibs to .txt extension (May not be needeed, but Ben Rockwood's **"The  Net-SNMP Programming Guide"** mentions to do the above. 
 3. Questions can be asked that why I didn't add the /var/lib/snmp/mibs to the MIB search path. 
-    <p>For a matter of fact, I did try a lot, but couldn't find the MIB search path environment variable. I came across                 post on stack overflow, which suggested adding command mibdirs +/var/lib/snmp/mibs that didn't work for me. You                  can cross check this by a simple trick whether thiscommand works or not /var/lib/snmp/mibs. 
+   <p>For a matter of fact, I did try a lot, but couldn't find the MIB search path environment variable. I came across                 post on stack overflow, which suggested adding command mibdirs +/var/lib/snmp/mibs that didn't work for me. You                  can cross check this by a simple trick whether thiscommand works or not /var/lib/snmp/mibs. 
     
     **Here's how you should check:**
     
-    1. Under /etc/snmp/snmp/snmp.conf file, uncomment the line that says, #mibs :
-    2. On uncommenting the above, we are telling snmpd to not use any mibs from the search path 
+    * Under /etc/snmp/snmp/snmp.conf file, uncomment the line that says, #mibs :
+    * On uncommenting the above, we are telling snmpd to not use any mibs from the search path 
     * Now move all the mibs that start by SNMPv2 to /var/lib/snmp/mibs folder 
     * Again under /etc/snmp/snmp/snmp.conf file, after the line that says mibs :
       type mibdirs +/var/lib/snmp/mibs and  save it

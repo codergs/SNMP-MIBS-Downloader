@@ -50,5 +50,6 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
       <p>**Output**  ==>  **iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10**
       
       If you see the above output then the path /var/lib/snmp/mibs was not looked up 
+
 ##Comment
 Please feel free to get in touch with me in case if you find answers to some of the unaswered questioned mentioned in the article. I hope this helps. Thanks for reading !!

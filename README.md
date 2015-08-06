@@ -47,7 +47,7 @@ Here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
       
       If you see the above output then the path was /var/lib/snmp/mibs looked up
       
-      <p>**Command** ==>  **snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2 **
+      <p>**Command** ==>  **snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2**
       <p>**Output**  ==>  **iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10**
       
       If you see the above output then the path was /var/lib/snmp/mibs was not looked up 

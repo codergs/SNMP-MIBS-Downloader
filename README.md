@@ -25,7 +25,7 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
     <p>**apt-get install smistrip (for root users) and sudo apt-get install smistrip (for sudo users)**
 9.  For me this did install the MIBS under /usr/share/snmp/mibs and /var/lib/snmp/mibs. Since var/lib/snmp/mibs was not in the       MIB search path, I decided to move all the MIBS from /var/lib/snmp/mibs into the /usr/share/snmp/mibs
 
-##Important Information##:
+##Important Informations:
 1. For many users the installed MIBs were under /usr/local/share/snmp/mibs
 2. I changed all the mibs under /usr/share/snmp/mibs to .txt extension (May not be needeed, but Ben Rockwood's **"The  Net-SNMP Programming Guide"** mentions to do the above. 
 3. Questions can be asked that why I didn't add the /var/lib/snmp/mibs to the MIB search path. 
@@ -41,12 +41,14 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
     * Restart the snmp daemon by issuing:
       service snmpd restart (for root users) and sudo service snmpd restart (for sudo users)
     * Now, issue 
-      ###<p>**Command** ==> **snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2** 
-      ###<p>**Output**  ==> **SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10** 
+      <p>**Command** ==> **snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2** 
+      <p>**Output**  ==> **SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10** 
       
-      If you see the above output then the path was /var/lib/snmp/mibs looked up
+      If you see the above output then the path /var/lib/snmp/mibs looked up
       
-      ####<p>**Command** ==>  **snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2**
-      ####<p>**Output**  ==>  **iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10**
+      <p>**Command** ==>  **snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2**
+      <p>**Output**  ==>  **iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10**
       
-      If you see the above output then the path was /var/lib/snmp/mibs was not looked up 
+      If you see the above output then the path /var/lib/snmp/mibs was not looked up 
+##Comment
+Please feel free to get in touch with me in case if you find answers to some of the unaswered questioned mentioned in the article. I hope this helps. Thanks for reading !!

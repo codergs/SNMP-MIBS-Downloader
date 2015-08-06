@@ -23,14 +23,16 @@ here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
     prior running the script
 6.  Under my make file, there is an added clean tag that wil come handy if somethinng needs to be build again 
 7.  Change directory to snmp-mibs-downloader_1.1 by typing cd ssnmp-mibs-downloader_1.1
-8.  make install (for root users) and sudo make install (for sudo users)
-9.  sudo donwload-mibs 
+     make install (for root users) and sudo make install (for sudo users)
+     sudo donwload-mibs 
 10. Running this command I got error: /usr/bin/smistrip not a file or directory, which was corrected installing the missing 
     downloading the smistrip package from the apt suite using
     apt-get install smistrip (for root users) and sudo apt-get install smistrip (for sudo users)
 11. For me this did install MIBS under /usr/share/snmp/mibs and /var/lib/snmp/mibs. Since var/lib/snmp/mibs was not in the MIB       search path, I decided to move all the MIBS from /var/lib/snmp/mibs into the /usr/share/snmp/mibs
+
   **Note: For many users the installed MIBs were under /usr/local/share/snmp/mibs
     Also, I changed all the mibs under /usr/share/snmp/mibs to .txt extension (May not be needeed, but Ben Rockwood's "The           Net-SNMP Programming Guide" mentions to do the above. 
+    
   **Note: Questions can bea asked why I didn't add the /var/lib/snmp/mibs to the MIB search path. For a matter of fact, I did see
     stack overflow to do so, but the command mibdirs +/var/lib/snmp/mibs didn't work for me. You can cross check this by a simple     trick whether the mibs were added or not from the /var/lib/snmp/mibs.
     
@@ -43,8 +45,8 @@ here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
     * Restart the snmp daemon by issuing:
       service snmpd restart (for root users) and sudo service snmpd restart (for sudo users)
     * Now, issue 
-      COMMAND----> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2
-      OUTPUT-----> SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10
+      COMMAND----> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2 \n
+      OUTPUT-----> SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10 \n
       
       If you see the above output then the path was /var/lib/snmp/mibs looked up 
       

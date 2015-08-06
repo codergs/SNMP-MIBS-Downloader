@@ -56,4 +56,4 @@ here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
       
       If you see the above output then the path was /var/lib/snmp/mibs was not looked up 
       
-      
+       

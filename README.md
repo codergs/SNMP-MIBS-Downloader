@@ -14,15 +14,15 @@ Here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
 2.  Drop to root user on Ubuntu (If one has sudo privileges, then that will work as well)
 3.  Change directory to the one where the file snmp-mibs-downloader_1.1.tar.gz resides. (For eg., lets say the file was 
     downloaded under /home/your_username/downlowad folder, once can type the below commands:
-      <p>cd ~/Download 
-      <p>sudo tar xvzf snmp-mibs-downloader_1.1.tar.gz
+      <p>**cd ~/Download** 
+      <p>**sudo tar xvzf snmp-mibs-downloader_1.1.tar.gz**
 4.  The above will utar and unzip the above file to create snmp-mibs-downloader_1.1 folder under Downloads directory 
 5.  Use the make file under this repo as the one that comes with the package gave me build errors as folder paths weren't created
     prior running the script
 6.  Under my make file, there is an added clean tag that wil come handy if somethinng needs to be build again 
 7.  Change directory to snmp-mibs-downloader_1.1 by typing cd ssnmp-mibs-downloader_1.1
-     <p>make install (for root users) and sudo make install (for sudo users)
-     <p>sudo donwload-mibs 
+     <p>**make install (for root users) and sudo make install (for sudo users)**
+     <p>**sudo donwload-mibs**
 8. Running this command I got error: /usr/bin/smistrip not a file or directory, which was corrected installing the missing 
     downloading the smistrip package from the apt suite using apt-get install smistrip (for root users) and sudo apt-get install     smistrip (for sudo users)
 9. For me this did install MIBS under /usr/share/snmp/mibs and /var/lib/snmp/mibs. Since var/lib/snmp/mibs was not in the MIB       search path, I decided to move all the MIBS from /var/lib/snmp/mibs into the /usr/share/snmp/mibs
@@ -42,9 +42,9 @@ Here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
     * Restart the snmp daemon by issuing:
       service snmpd restart (for root users) and sudo service snmpd restart (for sudo users)
     * Now, issue 
-      <p>COMMAND ==> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2 
-      <p>OUTPUT  ==> SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10 
+      <p>**COMMAND** ==> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2 
+      <p>**OUTPUT**  ==> SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10 
       <p>If you see the above output then the path was /var/lib/snmp/mibs looked up 
-      <p>COMMAND ==>  snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2
-      <p>OUTPUT  ==>  iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10
+      <p>**COMMAND** ==>  snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2
+      <p>**OUTPUT**  ==>  iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10
       <p>If you see the above output then the path was /var/lib/snmp/mibs was not looked up 

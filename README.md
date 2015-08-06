@@ -45,11 +45,10 @@ here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
     * Restart the snmp daemon by issuing:
       service snmpd restart (for root users) and sudo service snmpd restart (for sudo users)
     * Now, issue 
-      COMMAND----> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2 
-      OUTPUT-----> SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10 
+      <p>COMMAND----> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2 
+      <p>OUTPUT-----> SNMPv2-MIB::sysObjectID.0 = OID: NET-SNMP-MIB::netSnmpAgentOIDs.10 
       
       If you see the above output then the path was /var/lib/snmp/mibs looked up 
-      
       <p>COMMAND----> snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.2
       <p>OUTPUT-----> iso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10
       

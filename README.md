@@ -26,9 +26,9 @@ here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
      <p>make install (for root users) and sudo make install (for sudo users)
      <p>sudo donwload-mibs 
 10. Running this command I got error: /usr/bin/smistrip not a file or directory, which was corrected installing the missing 
-    downloading the smistrip package from the apt suite using
-     <p>apt-get install smistrip (for root users) and sudo apt-get install smistrip (for sudo users)
+    downloading the smistrip package from the apt suite using apt-get install smistrip (for root users) and sudo apt-get install     smistrip (for sudo users)
 11. For me this did install MIBS under /usr/share/snmp/mibs and /var/lib/snmp/mibs. Since var/lib/snmp/mibs was not in the MIB       search path, I decided to move all the MIBS from /var/lib/snmp/mibs into the /usr/share/snmp/mibs
+
   **Note: For many users the installed MIBs were under /usr/local/share/snmp/mibs
     Also, I changed all the mibs under /usr/share/snmp/mibs to .txt extension (May not be needeed, but Ben Rockwood's "The           Net-SNMP Programming Guide" mentions to do the above. 
     

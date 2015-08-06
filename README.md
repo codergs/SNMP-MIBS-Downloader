@@ -19,7 +19,7 @@ Here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
 4.  The above will utar and unzip the snmp-mibs-downloader_1.1.tar.gz to create snmp-mibs-downloader_1.1 folder under Downloads
 5.  Use the make file under this repo as the one that comes with the package gave me build errors as folder paths weren't created
     prior running the script
-6.  Under my make file, there is an added clean tag that wil come handy if somethinng needs to be build again 
+6.  Under my make file, there is an added clean tag that wil come handy if somethinng needs to be re-built 
 7.  Change directory to snmp-mibs-downloader_1.1 by typing cd ssnmp-mibs-downloader_1.1
      <p>**make install (for root users) and sudo make install (for sudo users)**
      <p>**sudo donwload-mibs**

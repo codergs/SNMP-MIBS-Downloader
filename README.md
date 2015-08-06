@@ -33,8 +33,8 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
     
     **Here's how you should check:**
     
-1. Under /etc/snmp/snmp/snmp.conf file, uncomment the line that says, #mibs :
-2. On uncommenting the above, we are telling snmpd to not use any mibs from the search path 
+    1. Under /etc/snmp/snmp/snmp.conf file, uncomment the line that says, #mibs :
+    2. On uncommenting the above, we are telling snmpd to not use any mibs from the search path 
     * Now move all the mibs that start by SNMPv2 to /var/lib/snmp/mibs folder 
     * Again under /etc/snmp/snmp/snmp.conf file, after the line that says mibs :
       type mibdirs +/var/lib/snmp/mibs and  save it

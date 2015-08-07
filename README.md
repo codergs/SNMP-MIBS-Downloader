@@ -1,4 +1,4 @@
-# SNMP_MIBS_Downloader
+# SNMP MIBS Downloader
 ##Instructions for Installing snmp-mibs-downloader on Ubuntu using snmp-mibs-downloader_1.1.tar.gz
 
 Recently, I tried installing snmp on my Ubuntu machine, and had world of problems downloading the MIBs as the snmp-mibs-dowloader

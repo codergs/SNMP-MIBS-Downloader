@@ -15,8 +15,8 @@ all:
 install:
 	mkdir /usr/share/doc/mibrfcs
 	mkdir /usr/share/doc/mibiana
-	mkdir /usr/share/mibs/ietf
-	mkdir /usr/share/mibs/iana
+	mkdir -p /usr/share/mibs/ietf
+	mkdir -p /usr/share/mibs/iana
 	mkdir /etc/snmp-mibs-downloader
 	$(INSTALL) -m 755 $(BINFILES)  $(DESTDIR)/usr/bin
 	$(INSTALL) -m 644 $(CONFFILES) $(DESTDIR)/etc/snmp-mibs-downloader

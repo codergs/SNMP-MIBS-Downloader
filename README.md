@@ -14,7 +14,7 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
 3.  Change directory to the one where the file snmp-mibs-downloader_1.1.tar.gz resides. (For eg., lets say the file was 
     downloaded under /home/your_username/Downlowad folder, one can type the below commands:
       <p>**cd ~/Download** 
-      <p>**sudo tar xvzf snmp-mibs-downloader_1.1.tar.gz**
+      <p>**tar xvzf snmp-mibs-downloader_1.1.tar.gz**
 4.  The above will utar and unzip the snmp-mibs-downloader_1.1.tar.gz to create snmp-mibs-downloader_1.1 folder under Downloads
 5.  Use the make file under this repo as the one that comes with the package gave me build errors as the necessary folder paths      weren't created prior running the script
 6.  Under my make file, there is an added clean tag that wil come handy if somethinng needs to be re-built 

@@ -9,7 +9,8 @@ Here's the link--> http://packages.ubuntu.com/precise/net/snmp-mibs-downloader
 This repo has tweaked make file and steps that will help you install snmp-mibs-downloader on Ubuntu 
 
 ##Setup
-1.  Download the tar.gz version from the above mentioned link
+1.  Download the tar.gz version from the above mentioned link 
+    <p>**wget -P ~/Download/ http://archive.ubuntu.com/ubuntu/pool/multiverse/s/snmp-mibs-downloader/snmp-mibs-downloader_1.1.tar.gz
 2.  Drop to root user on Ubuntu (If one has sudo privileges, then that will work as well)
 3.  Change directory to the one where the file snmp-mibs-downloader_1.1.tar.gz resides. (For eg., lets say the file was 
     downloaded under /home/your_username/Downlowad folder, one can type the below commands:

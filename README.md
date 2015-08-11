@@ -21,7 +21,7 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
 7.  Change the directory to snmp-mibs-downloader_1.1 by typing cd ssnmp-mibs-downloader_1.1
      <p>**make install (for root users) and sudo make install (for sudo users)**
      <p>**sudo donwload-mibs**
-8.  Running this command I got an error: **/usr/bin/smistrip not a file or directory**, which was be corrected installing the        smistrip package from the apt suite using: 
+8.  Running this command I got an error: **/usr/bin/smistrip not a file or directory**, which was corrected by installing the        smistrip package from the apt suite using: 
     <p>**apt-get install smistrip (for root users) and sudo apt-get install smistrip (for sudo users)**
 9.  For me this did install the MIBS under /usr/share/snmp/mibs and /var/lib/snmp/mibs. Since var/lib/snmp/mibs was not in the       MIB search path, I decided to move all the MIBS from /var/lib/snmp/mibs into the /usr/share/snmp/mibs
 

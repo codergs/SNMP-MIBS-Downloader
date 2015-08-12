@@ -26,7 +26,7 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
     <p>**apt-get install smistrip (for root users) and sudo apt-get install smistrip (for sudo users)**
 9.  For me this did install the MIBS under /usr/share/snmp/mibs and /var/lib/snmp/mibs. Since var/lib/snmp/mibs was not in the       MIB search path, I decided to move all the MIBS from /var/lib/snmp/mibs into the /usr/share/snmp/mibs
 
-##Important Informations:
+##Important Information:
 1. For many users the installed MIBs were under /usr/local/share/snmp/mibs
 2. I changed all the mibs under /usr/share/snmp/mibs to .txt extension (May not be needeed, but Ben Rockwood's **"The  Net-SNMP Programming Guide"** mentions to do the above. 
 3. Questions can be asked that why I didn't add the /var/lib/snmp/mibs to the MIB search path. 

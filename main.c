@@ -1,3 +1,4 @@
+// Author: This code snippet is from Ben Rockwood's net-snmp programming guide
 #include <net-snmp/net-snmp-config.h>
 #include <net-snmp/net-snmp-includes.h>
 #include <string.h>
@@ -41,3 +42,4 @@ int main(int argc, char ** argv)
         return (0);
 }
 
+ 

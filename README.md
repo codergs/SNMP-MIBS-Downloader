@@ -52,5 +52,5 @@ This repo has tweaked make file and steps that will help you install snmp-mibs-d
       
       If you see the above output then the path /var/lib/snmp/mibs was not looked up 
 
-##Comment
+##Connect
 Please feel free to get in touch with me in case if you find answers to some of the unaswered questions mentioned in the above article, or any noticable error. I hope this helps. Thanks for reading !!
